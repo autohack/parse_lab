@@ -2,12 +2,16 @@
 
 #for run : 
 yacc -d sql.y
-flex sql.l
-gcc lex.yy.c y.tab.c -o sql
+
+flex sql.l 
+
+gcc lex.yy.c y.tab.c -o sql 
+
 ./sql
 
 
 gcc modified.c -o modified
+
 ./modified
 
 
